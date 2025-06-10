@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Oli - Arranger/Singer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+        }
+        
+        .animated-button {
+            background: linear-gradient(45deg, #007bff, #00ff88);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+        
+        .animated-button:hover {
+            background-position: right center;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Suraj Oli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Suraj Oli</h1>
+            <h2 class="h4 mb-4">Arranger at OVM STUDIO</h2>
+            <p class="lead mb-4">Empowering Music Production with new technology</p>
+            <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 animated-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5 fade-in">My Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 fade-in">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Teaching</h3>
+                            <p class="card-text">Comprehensive computer education covering fundamental concepts to advanced technologies with practical learning approach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">IT Consultation</h3>
+                            <p class="card-text">Strategic technology guidance for businesses and individuals to optimize IT solutions and digital transformation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5 fade-in">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 fade-in">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Learn AI App</h3>
+                            <p class="card-text">Interactive mobile application for learning Artificial Intelligence fundamentals.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.learnaibasic.app" 
+                               class="btn btn-outline-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Computer Basic App</h3>
+                            <p class="card-text">Comprehensive guide to understanding computer fundamentals and operations.</p>
+                            <a href="https://play.google.com/store/apps/details?id=computerbasicguide.com" 
+                               class="btn btn-outline-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Contact Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 fade-in">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p class="lead">As your importance, I am here to support your journey towards mastering technology and achieving career success.</p>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <h2 class="section-title mb-4">Contact</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h5"><i class="bi bi-envelope me-2"></i>Email: info@suraj-oli.com.np</p>
+                            <div class="social-links mt-4">
+                                <a href="#" class="btn btn-outline-dark me-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="btn btn-outline-dark me-2"><i class="bi bi-github"></i></a>
+                                <a href="#" class="btn btn-outline-dark"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Suraj Oli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>llIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
